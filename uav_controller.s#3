@@ -5245,15 +5245,15 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <busses>
 <bus name="B$1">
 <segment>
-<wire x1="299.72" y1="99.06" x2="299.72" y2="180.34" width="0.762" layer="92"/>
+<wire x1="299.72" y1="83.82" x2="299.72" y2="180.34" width="0.762" layer="92"/>
 <wire x1="299.72" y1="180.34" x2="223.52" y2="180.34" width="0.762" layer="92"/>
-<wire x1="223.52" y1="180.34" x2="223.52" y2="109.22" width="0.762" layer="92"/>
+<wire x1="223.52" y1="180.34" x2="223.52" y2="83.82" width="0.762" layer="92"/>
 <wire x1="299.72" y1="180.34" x2="322.58" y2="180.34" width="0.762" layer="92"/>
 <wire x1="322.58" y1="180.34" x2="325.12" y2="177.8" width="0.762" layer="92"/>
-<wire x1="325.12" y1="177.8" x2="325.12" y2="93.98" width="0.762" layer="92"/>
+<wire x1="325.12" y1="177.8" x2="325.12" y2="83.82" width="0.762" layer="92"/>
 <wire x1="223.52" y1="180.34" x2="152.4" y2="180.34" width="0.762" layer="92"/>
 <wire x1="152.4" y1="180.34" x2="149.86" y2="177.8" width="0.762" layer="92"/>
-<wire x1="149.86" y1="177.8" x2="149.86" y2="104.14" width="0.762" layer="92"/>
+<wire x1="149.86" y1="177.8" x2="149.86" y2="83.82" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -5436,7 +5436,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN1"/>
 <label x="276.86" y="137.16" size="1.778" layer="95"/>
-<wire x1="274.32" y1="137.16" x2="299.72" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="137.16" x2="297.18" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="137.16" x2="299.72" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FWD2" class="0">
@@ -5448,8 +5449,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN2"/>
-<wire x1="299.72" y1="134.62" x2="274.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="134.62" x2="274.32" y2="134.62" width="0.1524" layer="91"/>
 <label x="276.86" y="134.62" size="1.778" layer="95"/>
+<wire x1="297.18" y1="134.62" x2="299.72" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FWD3" class="0">
@@ -5462,7 +5464,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN3"/>
 <label x="276.86" y="132.08" size="1.778" layer="95"/>
-<wire x1="274.32" y1="132.08" x2="299.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="132.08" x2="297.18" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="132.08" x2="299.72" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FWD4" class="0">
@@ -5475,7 +5478,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN4"/>
 <label x="276.86" y="129.54" size="1.778" layer="95"/>
-<wire x1="274.32" y1="129.54" x2="299.72" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="129.54" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="129.54" x2="299.72" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RWD1" class="0">
@@ -5487,8 +5491,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IN1"/>
-<wire x1="274.32" y1="106.68" x2="299.72" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="106.68" x2="297.18" y2="106.68" width="0.1524" layer="91"/>
 <label x="276.86" y="106.68" size="1.778" layer="95"/>
+<wire x1="297.18" y1="106.68" x2="299.72" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RWD2" class="0">
@@ -5500,8 +5505,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IN2"/>
-<wire x1="299.72" y1="104.14" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="104.14" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
 <label x="276.86" y="104.14" size="1.778" layer="95"/>
+<wire x1="297.18" y1="104.14" x2="299.72" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RWD3" class="0">
@@ -5513,8 +5519,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IN3"/>
-<wire x1="274.32" y1="101.6" x2="299.72" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="101.6" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
 <label x="276.86" y="101.6" size="1.778" layer="95"/>
+<wire x1="297.18" y1="101.6" x2="299.72" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RWD4" class="0">
@@ -5526,8 +5533,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IN4"/>
-<wire x1="299.72" y1="99.06" x2="274.32" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="99.06" x2="274.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="276.86" y="99.06" size="1.778" layer="95"/>
+<wire x1="297.18" y1="99.06" x2="299.72" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
