@@ -2504,7 +2504,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instances>
 <instance part="JP1" gate="G$1" x="17.78" y="40.64" rot="MR180"/>
 <instance part="SUPPLY1" gate="G$1" x="35.56" y="48.26"/>
-<instance part="SUPPLY2" gate="G$1" x="55.88" y="86.36"/>
+<instance part="SUPPLY2" gate="G$1" x="58.42" y="86.36"/>
 <instance part="SUPPLY3" gate="G$1" x="144.78" y="73.66"/>
 <instance part="SUPPLY4" gate="G$1" x="129.54" y="160.02"/>
 <instance part="SUPPLY5" gate="G$1" x="-15.24" y="132.08"/>
@@ -2520,7 +2520,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP2" gate="G$1" x="154.94" y="63.5"/>
 <instance part="JP3" gate="G$1" x="154.94" y="50.8"/>
 <instance part="SUPPLY8" gate="G$1" x="139.7" y="73.66"/>
-<instance part="R1" gate="G$1" x="55.88" y="78.74" rot="R90"/>
+<instance part="R1" gate="G$1" x="58.42" y="78.74" rot="R90"/>
 <instance part="Y1" gate="G$1" x="157.48" y="33.02" rot="R270"/>
 <instance part="JP4" gate="G$1" x="83.82" y="162.56" rot="R180"/>
 <instance part="JP5" gate="G$1" x="101.6" y="162.56" rot="MR180"/>
@@ -2604,7 +2604,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-<wire x1="55.88" y1="83.82" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="1"/>
@@ -2738,12 +2738,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="177.8" y1="63.5" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="MCLR" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MCLR/VPP"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="71.12" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
+<label x="48.26" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OSC2" class="0">
