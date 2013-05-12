@@ -1488,13 +1488,13 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="48.26"/>
 <instance part="SUPPLY2" gate="G$1" x="55.88" y="86.36"/>
 <instance part="SUPPLY3" gate="G$1" x="144.78" y="73.66"/>
-<instance part="SUPPLY4" gate="G$1" x="96.52" y="91.44"/>
-<instance part="SUPPLY5" gate="G$1" x="78.74" y="93.98"/>
-<instance part="SUPPLY6" gate="G$1" x="78.74" y="91.44"/>
+<instance part="SUPPLY4" gate="G$1" x="86.36" y="116.84"/>
+<instance part="SUPPLY5" gate="G$1" x="88.9" y="116.84"/>
+<instance part="SUPPLY6" gate="G$1" x="83.82" y="116.84"/>
 <instance part="SUPPLY7" gate="G$1" x="111.76" y="76.2"/>
 <instance part="GND1" gate="1" x="27.94" y="27.94"/>
-<instance part="GND2" gate="1" x="114.3" y="111.76"/>
-<instance part="GND3" gate="1" x="104.14" y="104.14"/>
+<instance part="GND2" gate="1" x="104.14" y="119.38"/>
+<instance part="GND3" gate="1" x="50.8" y="27.94"/>
 <instance part="GND4" gate="1" x="142.24" y="27.94"/>
 <instance part="GND5" gate="1" x="142.24" y="43.18"/>
 <instance part="GND6" gate="1" x="111.76" y="27.94"/>
@@ -1510,11 +1510,11 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <wire x1="33.02" y1="27.94" x2="33.02" y2="91.44" width="0.762" layer="92"/>
 <wire x1="33.02" y1="91.44" x2="35.56" y2="93.98" width="0.762" layer="92"/>
-<wire x1="35.56" y1="93.98" x2="50.8" y2="93.98" width="0.762" layer="92"/>
-<wire x1="50.8" y1="93.98" x2="114.3" y2="93.98" width="0.762" layer="92"/>
+<wire x1="35.56" y1="93.98" x2="48.26" y2="93.98" width="0.762" layer="92"/>
+<wire x1="48.26" y1="93.98" x2="114.3" y2="93.98" width="0.762" layer="92"/>
 <wire x1="114.3" y1="93.98" x2="116.84" y2="91.44" width="0.762" layer="92"/>
-<wire x1="50.8" y1="93.98" x2="48.26" y2="91.44" width="0.762" layer="92"/>
-<wire x1="48.26" y1="91.44" x2="48.26" y2="27.94" width="0.762" layer="92"/>
+<wire x1="48.26" y1="93.98" x2="45.72" y2="91.44" width="0.762" layer="92"/>
+<wire x1="45.72" y1="91.44" x2="45.72" y2="27.94" width="0.762" layer="92"/>
 <wire x1="116.84" y1="91.44" x2="116.84" y2="27.94" width="0.762" layer="92"/>
 <wire x1="114.3" y1="93.98" x2="177.8" y2="93.98" width="0.762" layer="92"/>
 <wire x1="177.8" y1="93.98" x2="180.34" y2="91.44" width="0.762" layer="92"/>
@@ -1552,6 +1552,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="99.06" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
 <wire x1="111.76" y1="50.8" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
@@ -1587,6 +1588,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="99.06" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="111.76" y1="48.26" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<label x="101.6" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="5"/>
@@ -1603,6 +1605,13 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="149.86" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="33.02" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="60.96" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<label x="53.34" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -1666,8 +1675,8 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <net name="OSC2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OSC2"/>
-<wire x1="60.96" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="48.26" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="48.26" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <label x="53.34" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -1680,14 +1689,15 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <net name="OSC1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OSC1"/>
-<wire x1="60.96" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="50.8" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="53.34" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="157.48" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="35.56" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
 <label x="165.1" y="35.56" size="1.778" layer="95"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
