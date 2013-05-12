@@ -2593,7 +2593,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
 <part name="PWR" library="SparkFun-LED" deviceset="LED" device="5MM"/>
-<part name="U$2" library="SparkFun-Connectors" deviceset="PIC-ICSP" device="POLAR_LOCK"/>
+<part name="ISCP" library="SparkFun-Connectors" deviceset="PIC-ICSP" device="POLAR_LOCK" value=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -2633,7 +2633,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R4" gate="G$1" x="5.08" y="134.62"/>
 <instance part="R5" gate="G$1" x="5.08" y="157.48"/>
 <instance part="PWR" gate="G$1" x="17.78" y="157.48" rot="R270"/>
-<instance part="U$2" gate="G$1" x="-2.54" y="78.74"/>
+<instance part="ISCP" gate="G$1" x="-2.54" y="78.74"/>
 <instance part="GND10" gate="1" x="25.4" y="63.5"/>
 </instances>
 <busses>
@@ -2789,7 +2789,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-2.54" y1="157.48" x2="0" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="ISCP" gate="G$1" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="5.08" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="78.74" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
@@ -2857,7 +2857,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <label x="48.26" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VPP"/>
+<pinref part="ISCP" gate="G$1" pin="VPP"/>
 <wire x1="5.08" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="83.82" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 <label x="7.62" y="83.82" size="1.778" layer="95"/>
@@ -3043,14 +3043,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="VCC_NC" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="ISCP" gate="G$1" pin="VCC"/>
 <wire x1="5.08" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="7.62" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGD" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="PGD"/>
+<pinref part="ISCP" gate="G$1" pin="PGD"/>
 <wire x1="5.08" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="76.2" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 <label x="7.62" y="76.2" size="1.778" layer="95"/>
@@ -3064,7 +3064,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="PGC" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="PGC"/>
+<pinref part="ISCP" gate="G$1" pin="PGC"/>
 <wire x1="5.08" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="73.66" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 <label x="7.62" y="73.66" size="1.778" layer="95"/>
