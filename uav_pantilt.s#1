@@ -1929,15 +1929,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$1" library="SparkFun-DigitalIC" deviceset="PIC18F2550" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="CTRL" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
@@ -1966,15 +1959,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="U$1" gate="G$1" x="111.76" y="35.56"/>
 <instance part="SUPPLY1" gate="G$1" x="142.24" y="58.42"/>
 <instance part="SUPPLY2" gate="G$1" x="81.28" y="66.04"/>
-<instance part="SUPPLY4" gate="G$1" x="30.48" y="101.6"/>
-<instance part="SUPPLY5" gate="G$1" x="33.02" y="101.6"/>
-<instance part="SUPPLY6" gate="G$1" x="27.94" y="101.6"/>
 <instance part="GND1" gate="1" x="66.04" y="-22.86"/>
-<instance part="GND2" gate="1" x="25.4" y="96.52"/>
-<instance part="GND3" gate="1" x="35.56" y="96.52"/>
-<instance part="GND6" gate="1" x="35.56" y="96.52"/>
 <instance part="GND7" gate="1" x="152.4" y="43.18"/>
-<instance part="GND8" gate="1" x="30.48" y="96.52"/>
 <instance part="GND9" gate="1" x="81.28" y="12.7"/>
 <instance part="GND10" gate="1" x="142.24" y="12.7"/>
 <instance part="CTRL" gate="G$1" x="157.48" y="25.4"/>
@@ -2052,10 +2038,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="40.64" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="25.4" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>

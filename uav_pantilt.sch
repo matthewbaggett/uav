@@ -1940,8 +1940,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="5MM"/>
-<part name="LED2" library="SparkFun-LED" deviceset="LED" device="5MM"/>
+<part name="BUSY" library="SparkFun-LED" deviceset="LED" device="5MM"/>
+<part name="PWR" library="SparkFun-LED" deviceset="LED" device="5MM"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
 </parts>
 <sheets>
@@ -1970,8 +1970,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SUPPLY9" gate="G$1" x="177.8" y="60.96"/>
 <instance part="R1" gate="G$1" x="170.18" y="58.42" rot="R180"/>
 <instance part="R2" gate="G$1" x="170.18" y="50.8" rot="R180"/>
-<instance part="LED1" gate="G$1" x="160.02" y="50.8" rot="R270"/>
-<instance part="LED2" gate="G$1" x="160.02" y="58.42" rot="R270"/>
+<instance part="BUSY" gate="G$1" x="160.02" y="50.8" rot="R270"/>
+<instance part="PWR" gate="G$1" x="160.02" y="58.42" rot="R270"/>
 <instance part="R3" gate="G$1" x="81.28" y="58.42" rot="R90"/>
 </instances>
 <busses>
@@ -2088,10 +2088,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="66.04" y="-2.54"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="154.94" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="58.42" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="BUSY" gate="G$1" pin="C"/>
 <wire x1="154.94" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="50.8" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -2324,14 +2324,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="58.42" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="BUSY" gate="G$1" pin="A"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 </segment>
