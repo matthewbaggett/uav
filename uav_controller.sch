@@ -6498,7 +6498,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="FLIGHTCTRL" library="microchip" deviceset="PIC16F87*" device="SO" technology="7"/>
+<part name="CPU" library="microchip" deviceset="PIC16F87*" device="SO" technology="7" value="'16F877"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -6543,7 +6543,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun-Connectors" deviceset="PIC-ICSP" device="POLAR_LOCK"/>
+<part name="ICSP" library="SparkFun-Connectors" deviceset="PIC-ICSP" device="POLAR_LOCK" value=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="KIT"/>
@@ -6553,7 +6553,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <plain>
 </plain>
 <instances>
-<instance part="FLIGHTCTRL" gate="G$1" x="187.96" y="134.62"/>
+<instance part="CPU" gate="G$1" x="187.96" y="134.62"/>
 <instance part="SUPPLY1" gate="G$1" x="63.5" y="167.64"/>
 <instance part="SUPPLY2" gate="G$1" x="185.42" y="170.18"/>
 <instance part="SUPPLY3" gate="G$1" x="119.38" y="114.3"/>
@@ -6598,7 +6598,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="SUPPLY7" gate="G$1" x="167.64" y="223.52"/>
 <instance part="SUPPLY8" gate="G$1" x="162.56" y="223.52"/>
 <instance part="GND9" gate="1" x="165.1" y="185.42"/>
-<instance part="U$1" gate="G$1" x="106.68" y="50.8"/>
+<instance part="ICSP" gate="G$1" x="106.68" y="50.8"/>
 <instance part="GND10" gate="1" x="134.62" y="35.56"/>
 <instance part="R2" gate="G$1" x="256.54" y="172.72"/>
 <instance part="R3" gate="G$1" x="256.54" y="167.64"/>
@@ -6621,12 +6621,12 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="VSS@1"/>
+<pinref part="CPU" gate="G$1" pin="VSS@1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="185.42" y1="101.6" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="96.52" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="VSS"/>
+<pinref part="CPU" gate="G$1" pin="VSS"/>
 <wire x1="187.96" y1="99.06" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
 <junction x="185.42" y="99.06"/>
 </segment>
@@ -6709,7 +6709,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <junction x="165.1" y="203.2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="ICSP" gate="G$1" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="114.3" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="50.8" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
@@ -6719,11 +6719,11 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <net name="3.3V" class="0">
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="VDD@1"/>
+<pinref part="CPU" gate="G$1" pin="VDD@1"/>
 <wire x1="185.42" y1="170.18" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="165.1" x2="185.42" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="167.64" x2="187.96" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="VDD"/>
+<pinref part="CPU" gate="G$1" pin="VDD"/>
 <wire x1="187.96" y1="167.64" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
 <junction x="185.42" y="167.64"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -6854,7 +6854,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="FWD1" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="INT/RB0"/>
+<pinref part="CPU" gate="G$1" pin="INT/RB0"/>
 <wire x1="208.28" y1="137.16" x2="220.98" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="137.16" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
 <label x="210.82" y="137.16" size="1.778" layer="95"/>
@@ -6868,7 +6868,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="FWD2" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RB1"/>
+<pinref part="CPU" gate="G$1" pin="RB1"/>
 <wire x1="208.28" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="139.7" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 <label x="210.82" y="139.7" size="1.778" layer="95"/>
@@ -6882,7 +6882,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="FWD3" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RB2"/>
+<pinref part="CPU" gate="G$1" pin="RB2"/>
 <wire x1="208.28" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="142.24" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="210.82" y="142.24" size="1.778" layer="95"/>
@@ -6896,7 +6896,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="FWD4" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PGM/RB3"/>
+<pinref part="CPU" gate="G$1" pin="PGM/RB3"/>
 <wire x1="208.28" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="144.78" x2="223.52" y2="147.32" width="0.1524" layer="91"/>
 <label x="210.82" y="144.78" size="1.778" layer="95"/>
@@ -6910,7 +6910,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="RWD1" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RB4"/>
+<pinref part="CPU" gate="G$1" pin="RB4"/>
 <wire x1="208.28" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="147.32" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
 <label x="210.82" y="147.32" size="1.778" layer="95"/>
@@ -6924,7 +6924,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="RWD2" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RB5"/>
+<pinref part="CPU" gate="G$1" pin="RB5"/>
 <wire x1="208.28" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="149.86" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
 <label x="210.82" y="149.86" size="1.778" layer="95"/>
@@ -6966,7 +6966,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="MCLR" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="!MCLR/THV"/>
+<pinref part="CPU" gate="G$1" pin="!MCLR/THV"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
@@ -6974,7 +6974,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="152.4" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VPP"/>
+<pinref part="ICSP" gate="G$1" pin="VPP"/>
 <wire x1="114.3" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="55.88" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="116.84" y="55.88" size="1.778" layer="95"/>
@@ -6988,7 +6988,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PSP7/RD7"/>
+<pinref part="CPU" gate="G$1" pin="PSP7/RD7"/>
 <wire x1="208.28" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="132.08" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
 <label x="210.82" y="132.08" size="1.778" layer="95"/>
@@ -7002,7 +7002,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PSP6/RD6"/>
+<pinref part="CPU" gate="G$1" pin="PSP6/RD6"/>
 <wire x1="208.28" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="129.54" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
 <label x="210.82" y="129.54" size="1.778" layer="95"/>
@@ -7016,7 +7016,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PSP5/RD5"/>
+<pinref part="CPU" gate="G$1" pin="PSP5/RD5"/>
 <wire x1="208.28" y1="127" x2="220.98" y2="127" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="127" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 <label x="210.82" y="127" size="1.778" layer="95"/>
@@ -7030,7 +7030,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PSP4/RD4"/>
+<pinref part="CPU" gate="G$1" pin="PSP4/RD4"/>
 <wire x1="208.28" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="124.46" x2="223.52" y2="127" width="0.1524" layer="91"/>
 <label x="210.82" y="124.46" size="1.778" layer="95"/>
@@ -7044,7 +7044,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RD3/PSP3"/>
+<pinref part="CPU" gate="G$1" pin="RD3/PSP3"/>
 <wire x1="208.28" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="111.76" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
 <label x="210.82" y="111.76" size="1.778" layer="95"/>
@@ -7058,7 +7058,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RD2/PSP2"/>
+<pinref part="CPU" gate="G$1" pin="RD2/PSP2"/>
 <wire x1="208.28" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="109.22" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
 <label x="210.82" y="109.22" size="1.778" layer="95"/>
@@ -7072,7 +7072,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RD1/PSP1"/>
+<pinref part="CPU" gate="G$1" pin="RD1/PSP1"/>
 <wire x1="165.1" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="109.22" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 <label x="154.94" y="109.22" size="1.778" layer="95"/>
@@ -7086,7 +7086,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="327.66" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RD0/PSP0"/>
+<pinref part="CPU" gate="G$1" pin="RD0/PSP0"/>
 <wire x1="165.1" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="111.76" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 <label x="154.94" y="111.76" size="1.778" layer="95"/>
@@ -7173,7 +7173,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="SDO/RC5"/>
+<pinref part="CPU" gate="G$1" pin="SDO/RC5"/>
 <wire x1="208.28" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="116.84" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="210.82" y="116.84" size="1.778" layer="95"/>
@@ -7181,7 +7181,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="TX/RC6"/>
+<pinref part="CPU" gate="G$1" pin="TX/RC6"/>
 <wire x1="208.28" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="119.38" x2="223.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="210.82" y="119.38" size="1.778" layer="95"/>
@@ -7203,7 +7203,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RX/RC7"/>
+<pinref part="CPU" gate="G$1" pin="RX/RC7"/>
 <wire x1="208.28" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="121.92" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <label x="210.82" y="121.92" size="1.778" layer="95"/>
@@ -7231,7 +7231,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="134.62" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RC3/SCK"/>
+<pinref part="CPU" gate="G$1" pin="RC3/SCK"/>
 <wire x1="165.1" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="114.3" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
 <label x="154.94" y="114.3" size="1.778" layer="95"/>
@@ -7245,7 +7245,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="134.62" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="SDI/RC4"/>
+<pinref part="CPU" gate="G$1" pin="SDI/RC4"/>
 <wire x1="208.28" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="114.3" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <label x="210.82" y="114.3" size="1.778" layer="95"/>
@@ -7257,7 +7257,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="114.3" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="132.08" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 <label x="129.54" y="132.08" size="1.778" layer="95"/>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RE2/!CS/AN7"/>
+<pinref part="CPU" gate="G$1" pin="RE2/!CS/AN7"/>
 <wire x1="165.1" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="132.08" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 <label x="154.94" y="132.08" size="1.778" layer="95"/>
@@ -7272,7 +7272,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </segment>
 <segment>
 <wire x1="149.86" y1="137.16" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RE1/!WR/AN6"/>
+<pinref part="CPU" gate="G$1" pin="RE1/!WR/AN6"/>
 <wire x1="152.4" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="154.94" y="134.62" size="1.778" layer="95"/>
 </segment>
@@ -7285,7 +7285,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="129.54" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="RE0/!RD/AN5"/>
+<pinref part="CPU" gate="G$1" pin="RE0/!RD/AN5"/>
 <wire x1="165.1" y1="137.16" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="137.16" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <label x="154.94" y="137.16" size="1.778" layer="95"/>
@@ -7317,7 +7317,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="63.5" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="OSC2/CLKOUT"/>
+<pinref part="CPU" gate="G$1" pin="OSC2/CLKOUT"/>
 <wire x1="165.1" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
 <label x="154.94" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -7331,7 +7331,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="63.5" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="OSC1/CLKIN"/>
+<pinref part="CPU" gate="G$1" pin="OSC1/CLKIN"/>
 <wire x1="152.4" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
 <label x="154.94" y="127" size="1.778" layer="95"/>
 </segment>
@@ -7354,20 +7354,20 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="VCC_NC" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="ICSP" gate="G$1" pin="VCC"/>
 <wire x1="114.3" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
 <label x="116.84" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PGD"/>
+<pinref part="ICSP" gate="G$1" pin="PGD"/>
 <wire x1="114.3" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="48.26" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="116.84" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PGD/RB7"/>
+<pinref part="CPU" gate="G$1" pin="PGD/RB7"/>
 <wire x1="208.28" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="154.94" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
 <label x="210.82" y="154.94" size="1.778" layer="95"/>
@@ -7381,13 +7381,13 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </net>
 <net name="PGC" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PGC"/>
+<pinref part="ICSP" gate="G$1" pin="PGC"/>
 <wire x1="114.3" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="45.72" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
 <label x="116.84" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FLIGHTCTRL" gate="G$1" pin="PGC/RB6"/>
+<pinref part="CPU" gate="G$1" pin="PGC/RB6"/>
 <wire x1="208.28" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="152.4" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <label x="210.82" y="152.4" size="1.778" layer="95"/>
